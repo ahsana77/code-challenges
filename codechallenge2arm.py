@@ -14,3 +14,12 @@ if n == arm(n) :
     print("armstrong number")
 else:
     print("not an armstrong number")
+found = False
+lb = int(input("enter a lower bound:"))
+ub = int(input("enter an upper bound:"))
+for i in range(lb,ub) :
+    if i == arm(i) :
+        print(i,end=',')
+        found = True
+if found == False:
+        print("no armstrong numbers")
